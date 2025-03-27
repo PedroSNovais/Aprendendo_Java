@@ -1,3 +1,5 @@
+package edu.pedro.AnatomiaeClasses;
+
 public class MinhasClasses {
     public static void main(String[] args) {
         String primeiroNome = "Pedro";
