@@ -1,4 +1,4 @@
-package edu.pedro.AnatomiaeClasses;
+package edu.pedro.anatomia;
 
 public class MinhasClasses {
     public static void main(String[] args) {
