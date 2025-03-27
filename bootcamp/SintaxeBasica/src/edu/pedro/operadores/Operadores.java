@@ -22,5 +22,9 @@ public class Operadores {
 
         System.out.println("Os nomes são iguais ? " + nomeUm.equals(nomeDois));
 
+        // Operadores logicos
+        // and == &&
+        // or == || (shift + \)
+
     }
 }
