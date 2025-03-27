@@ -14,7 +14,13 @@ public class Operadores {
         */
         String resultado = a==b ? "verdadeiro" : "Falso" ;
 
-
         System.out.println(resultado);
+
+        // para Strings use ".equals"
+        String nomeUm = "Pedro";
+        String nomeDois = "Pedro";
+
+        System.out.println("Os nomes são iguais ? " + nomeUm.equals(nomeDois));
+
     }
 }
