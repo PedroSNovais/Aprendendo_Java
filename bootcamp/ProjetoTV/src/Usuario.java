@@ -2,27 +2,25 @@ import java.util.Scanner;
 
 public class Usuario {
     public static void main(String[] args) {
-        SmartTV SmartTV = new SmartTV();
+        SmartTV Samsung = new SmartTV();
+        System.out.println(Samsung.ligada);
+        Samsung.ligarDesligar();
+        Samsung.aumentarVolume();
+        Samsung.aumentarVolume();
+        Samsung.aumentarVolume();
+        Samsung.abaixarVolume();
 
-        SmartTV.nome = "Samsung";
-            System.out.println("O nome da tv é " + SmartTV.nome);
-            System.out.println("A Tv está ligada ? " + SmartTV.ligada);
-
-        SmartTV.ligarDesligar();
-            System.out.println("SmartTV " + SmartTV.nome);
-            System.out.println("NOVO Status -> A Tv está ligada ? " + SmartTV.ligada);
-
-        SmartTV.abaixarVolume();
-        SmartTV.aumentarVolume();
+        System.out.printf("canal atual é o %d \n", Samsung.canal);
+        Samsung.aumentarCanal();
+        Samsung.aumentarCanal();
+        Samsung.abaixarCanal();
 
         Scanner teclado = new Scanner(System.in);
-        System.out.print("Digite o número do canal desejado: ");
-        double canal = teclado.nextDouble();
-        //SmartTV.mudarCanal(canal);
-        System.out.println(SmartTV.canal);
+        System.out.print("Digite o canal desejado: ");
+        int novocanal = teclado.nextInt();
+        Samsung.mudarCanal(novocanal);
+        System.out.printf("canal atual é o %d \n", Samsung.canal);
 
-
-        
     }
 
 }
