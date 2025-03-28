@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Usuario {
     public static void main(String[] args) {
         SmartTV Samsung = new SmartTV();
-        System.out.println(Samsung.ligada);
+        System.out.printf("A TV está %b \n", Samsung.ligada);
         Samsung.ligarDesligar();
         Samsung.aumentarVolume();
         Samsung.aumentarVolume();
@@ -20,6 +20,7 @@ public class Usuario {
         int novocanal = teclado.nextInt();
         Samsung.mudarCanal(novocanal);
         System.out.printf("canal atual é o %d \n", Samsung.canal);
+        Samsung.ligarDesligar();
 
     }
 
