@@ -2,7 +2,7 @@ public class SmartTV {
 
     String nome;
     boolean ligada = false; 
-    int volume = 0;
+    int volume = 30;
     double canal = 1.0;
 
     public void ligarDesligar() {
@@ -12,16 +12,21 @@ public class SmartTV {
             ligada = false; 
     } 
     public void aumentarVolume(){
-        if (volume==100)
-            System.out.println("Volume = Max");
-        else
-            volume++;
+        String mensagem = volume==100 ? "Volume Max" : "Aumentando volume";
+        volume = volume!=100 ? volume++ : volume ;  
+        System.out.println(mensagem);
+        System.out.printf("NOVO Status -> Volume = %d \n", volume);
     }
     public void abaixarVolume(){
-        if (volume==0)
-            System.out.println("Volume = Min");
-        else
-            volume--;
+        String mensagem = volume==0 ? "Volume Min" : "Abaixando volume";
+        volume = volume!=100 ? volume++ : volume ;  
+        System.out.println(mensagem);
+        System.out.printf("NOVO Status -> Volume = %d \n", volume);
+    }
+
+    public void mudarCanal (int novoCanal){
+        canal = novoCanal;
+
     }
 
 }
