@@ -1,2 +1,2 @@
-# 1º exercicío da **bootcamp java cloud native** na Dio
+# exercicío da **bootcamp java cloud native** na Dio
 ## estruturas de repetições
