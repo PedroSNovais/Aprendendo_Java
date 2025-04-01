@@ -6,6 +6,7 @@ public class ContaTerminal {
     String agencia;
     String cliente;
     double saldo;
+    
 
 
 }
