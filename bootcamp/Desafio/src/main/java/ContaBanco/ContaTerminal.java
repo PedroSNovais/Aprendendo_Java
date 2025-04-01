@@ -2,11 +2,11 @@
 package ContaBanco;
 public class ContaTerminal {
 
-    int numero;
+    int numero = 1020;
     String agencia;
     String cliente;
     double saldo;
-    
+
 
 
 }
