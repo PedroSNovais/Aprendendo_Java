@@ -1,2 +1,5 @@
 # exercicío da **bootcamp java cloud native** na Dio
-## estruturas de repetições
+## Estruturas de Dados
+|x|*if, else if,  else*
+|x|*switch, case, break* (defalt, continue, finally )
+
