@@ -1,5 +1,2 @@
-public class ParametrosInvalidosExeption {
-    public static void main(String[] args) {
-        throw ParametrosInvalidosExeption
-    }
+public class ParametrosInvalidosExeption extends Exception {
 }

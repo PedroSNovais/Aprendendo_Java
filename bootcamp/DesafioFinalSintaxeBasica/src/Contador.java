@@ -7,33 +7,28 @@ public class Contador {
         
         System.out.print("Digite o primeiro número: ");
         int primeriroNumero = teclado.nextInt();
+        
         System.out.print("Digite o segundo número: ");
         int segundoNumero = teclado.nextInt();
 
         try{
-
             contar(primeriroNumero, segundoNumero);
-
         } 
-        catch( ParametosInvalidosExeption exeption){
 
-            System.out.println("O segundo numero deve ser maior que o primeoirio !!");
-
+        catch( ParametrosInvalidosExeption e){
+            System.out.println("O segundo numero deve ser maior que o primeiro !!");
         }
-        
-        
-        System.out.println(primeriroNumero);
-        System.out.println(segundoNumero);
-
     }
 
-    public static void contar(int primeiroNumero, int segundoNumero)throws ParametrosInvalidosExepition {
-
+    public static void contar(int primeiroNumero, int segundoNumero)throws ParametrosInvalidosExeption{
+        if (primeiroNumero > segundoNumero) {
+            throw new ParametrosInvalidosExeption();
+        }
+    
         int contagem =  segundoNumero - primeiroNumero;
         System.out.println("contando de 0 a " + contagem);
             for(int n = 0; n != contagem; n++ ){
-                System.out.println("imprimindo" + n);
+                System.out.println("imprimindo " + n);
             }
     }
-
 }
