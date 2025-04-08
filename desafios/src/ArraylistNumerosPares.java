@@ -13,10 +13,16 @@ public class ArraylistNumerosPares {
                 numerosPares.add(numero);
             }
         }
-    System.out.print("Todos os numeros: ");
-    System.out.println(numeros);
-    System.out.print("Numeros pares: ");
-    System.out.println(numerosPares);
+        System.out.print("Todos os numeros: ");
+        System.out.println(numeros);
+        System.out.print("Numeros pares: ");
+        System.out.println(numerosPares);
 
+    if(numerosPares.indexOf(10) == -1)
+        System.out.println("O numero não foi encontrado !!! ");
+    else{
+        System.out.print("O numero 10 esta na posição ");
+        System.out.println(numerosPares.indexOf(10));
+    }
     }
 }
