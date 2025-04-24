@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
 # Meu Progresso de Aprendizagem em Java
 
 Este repositório documenta minha jornada de aprendizado na linguagem de programação Java. Aqui você encontrará exemplos de código, exercícios e projetos que desenvolvi enquanto estudo os conceitos e as funcionalidades do Java.
